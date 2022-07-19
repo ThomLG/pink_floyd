@@ -10,6 +10,7 @@
     <title>Les albums de Pink Floyd</title>
     <!-- Icône de l'onglet -->
     <link rel="shortcut icon" href="assets/images/logo_site.jpg" />
+    <!-- Fichier Css lié-->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -18,7 +19,6 @@
     <header>
         <h1>Pink Floyd</h1>
     </header>
-    <!-- Materialiser des grosses parties (section)  -->
 
     <main>
         <section class="introduction">
@@ -34,13 +34,24 @@
 
         <section class="members">
             <h2>Les membres du groupe</h2>
-            
+
             <div class="members_container">
-                
-                <div class="picture_container">
-                    <img class="member_picture" src="./assets/images/david_gilmour.jpg" alt="david_gilmour">
-                    <div class="text_picture">David Gilmour</div>
+
+                <div class="picture_container box">
+                    <div class="box-inner">
+                        <div class="box-front">
+                            <img class="member_picture" src="./assets/images/david_gilmour.jpg" alt="david_gilmour">
+                            <div class="text_picture">David Gilmour</div>
+                        </div>
+                        <div class="box-back">
+                                Test
+                        </div>
+                    </div>
                 </div>
+
+
+
+
 
                 <div class="picture_container ">
                     <img class="member_picture" src="./assets/images/richard_wright.jpg" alt="richard_wright">
@@ -69,7 +80,6 @@
 
             </div>
         </section>
-
         <section class="commentary">
             <h2>Laissez-nous un commentaire</h2>
             <div class="commentary-container">
@@ -86,10 +96,12 @@
                 </form>
             </div>
         </section>
+
     </main>
     <footer class="footer">
         <p>© 2022 ThomLG</p>
     </footer>
+    <script src="js/return.js"></script>
 </body>
 
 </html>
