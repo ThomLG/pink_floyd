@@ -97,37 +97,41 @@ h2 {
 }
 
 /*animation */
+.scene {
+  display: inline-block;
+  /*   border: 1px solid #CCC; */
+  perspective: 600px;
+}
 
-.box {
-    background-color: transparent;
-    perspective: 1000px;
-    overflow: hidden;
-  }
-  .box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-  }
-  .box:hover .box-inner {
-    transform: rotateY(180deg);
-  }
-  .box-front,
-  .box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .box-back {
-    background-color: #8ebf42;
-    color: #eeeeee;
-    transform: rotateY(180deg);
-  }
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
 
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card__face--front {
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+  background: white;
+  backface-visibility: hidden;
+}
 
 /* Partie formulaire */
 
