@@ -131,6 +131,8 @@ h2 {
   transform: rotateY(180deg);
   background: white;
   backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 /* Partie formulaire */
