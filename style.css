@@ -1,3 +1,5 @@
+/*TODO Improve global responsive
+
 /* Police Google Fonts */
 
 @font-face {
@@ -146,7 +148,7 @@ h2 {
 
 form {
   background: red;
-  margin: 10px;
+  margin: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -155,6 +157,7 @@ form {
     "email email"
     "ta ta"
     "bt bt";
+
 }
 
 input,
@@ -200,6 +203,7 @@ input[type="submit"]:hover {
 .img-container {
   background: green;
   text-align: center;
+  margin: 15px;
 }
 
 .img-container img {
